@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container-pricingpage {
+    top: 500px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.headertxt {
+    position: absolute;
+    text-align: center;
+    top: 23%;
+    left: 43%;
+    color: white;
+    font-family: 'Raleway';
+}
+
+.square1 {
+    top: 200%;
+    right: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 273px;
+    height: 320px;
+    border-radius: 72px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.square2 {
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 273px;
+    height: 320px;
+    border-radius: 72px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.square3 {
+    top: 200%;
+    left: 100%;
+    transform: translate(50%, -50%);
+    position: absolute;
+    width: 273px;
+    height: 320px;
+    border-radius: 72px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.container-pricingpage img {
+    margin-top: 10%;
+}
+
+.text {
+    font-family: 'Raleway';
+    color: black;
+    display: block;
+    margin-top: -145%;
+    line-height: 0.2;
+}
+
+.rupiah {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    color: black;
+    display: block;
+}
+
+.shapebottom {
+    display: inline-block;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.rect1 {
+    top: 115%;
+    right: 60%;
+    transform: translate(-50%, -50%);
+    width: 346px;
+    height: 100px;
+    position: absolute;
+    border-radius: 35px;
+    background-color: #8F98BA;
+    opacity: 90%;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect2 {
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 346px;
+    height: 100px;
+    position: absolute;
+    border-radius: 35px;
+    background-color: #8F98BA;
+    opacity: 90%;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect3 {
+    top: 115%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 346px;
+    height: 100px;
+    position: absolute;
+    border-radius: 35px;
+    background-color: #8F98BA;
+    opacity: 90%;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-checkfee {
+    position: absolute;
+    width: 99px;
+    height: 34px;
+    background-color: #E9E4DE;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left:70%;
+    margin-right: 8%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.rect1 h5,
+.rect2 h5,
+.rect3 h5 {
+    margin-right: 30%;
+    margin-top: 0%;
+}
+
+.rect1 img,
+.rect2 img,
+.rect3 img {
+    position: absolute;
+    margin-right: 70%;
+    margin-bottom: 8%;
+}
+
+.rupiah h6 {
+    margin-top: 55%;
+    margin-right: 30%;
+}
+
+.square1 h1,
+.square2 h1,
+.square3 h1 {
+    margin-top: -18%;
+    margin-bottom: 25%;
+}
+ 
+.container-pricingpage ul {
+    position: absolute;
+    list-style-type: disc;
+    font-size: 12px;
+    font-family: 'Raleway';
+    text-align: left;
+    margin: auto;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+
+.rect1:hover .button-checkfee,
+.rect2:hover .button-checkfee,
+.rect3:hover .button-checkfee {
+    transform: scale(1.1);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.square1, .square2, .square3,
+.container-pricingpage, .shapebottom {
+    animation: fadein 1.5s ease forwards;
+}

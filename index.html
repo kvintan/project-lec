@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Buat Tulisan Fontnya -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Untuk Fa Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>projects.co.id</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="homepage-1 carousel-item active" data-interval="3">
+                <nav class="navbar">
+                    <div class="penutup-warna"></div>
+                    <div class="navbar-container">
+                        <img src="images/logo.png" id="navbar-logo" alt="logo navbar">
+
+                        <!-- List Navbarnya -->
+                        <ul class="navbar-menu">
+                            <div class="howitworks" onclick="closeDropdown('discover'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-links">How It Works</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </li>
+                                <ul class="dropdown-howitworks">
+                                    <li id="aboutuslink" class="first-howitworks">
+                                        <h5>About Us</h5>
+                                        <p>Introduction our website.</p>
+                                    </li>
+                                    <li id="ownerlink">
+                                        <h5>Learn</h5>
+                                        <p>How it works, advantages, rules.</p>
+                                    </li>
+                                    <li id="pricinglink">
+                                        <h5>Pricing</h5>
+                                        <p>Pricing Details and Options.</p>
+                                    </li>
+                                    <li id="faqslink">
+                                        <h5>Help</h5>
+                                        <p>Explore tips, testimonials, and FAQs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="discover" onclick="closeDropdown('howitworks'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Discover</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </li>
+                                <ul class="dropdown-discover">
+                                    <li id="createlink" class="first-discover">
+                                        <h5>Create Project</h5>
+                                        <p>Create your project and find a worker</p>
+                                    </li>
+                                    <li id="browselink">
+                                        <h5>Browse Products and Projects</h5>
+                                        <p>Search for available Products</p>
+                                    </li>
+                                    <li id="selllink">
+                                        <h5>Sell Services and Products</h5>
+                                        <p>Sell your services and products</p>
+                                    </li>
+                                    <li id="affiliatelink">
+                                        <h5>Affiliate</h5>
+                                        <p>How to become affiliate from zero</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Community</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </li>
+                                <ul class="dropdown-community">
+                                    <li id="communitylink" class="first-community">
+                                        <h5>Community</h5>
+                                        <p>Connect with Projects.co.id community</p>
+                                    </li>
+                                    <li id="bloglink">
+                                        <h5>Blog</h5>
+                                        <p>Online platform for sharing ideas and stories.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="navbar-item">
+                                <a href="/" class="navbar-link start-work">Start Work</a>
+                            </li>
+                            <li class="navbar-btn">
+                                <a href="login/index.html" class="button">Join</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="homepage-1-tulisan-container">
+                    <h2 class="temukan-freelancer">TEMUKAN FREELANCER</h2>
+                    <h4 class="dari-seluruh-indonesia">DARI SELURUH PENJURU INDONESIA UNTUK BERBAGAI PEKERJAAN</h4>
+                    <div class="search-bar-white"></div>
+                    <div class="search-bar-orange">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="tulisan-search">Try "Web Development"</h5>
+                    <h4 class="popular">Popular:</h4>
+                    <h4 class="website-design">Website Design</h4>
+                    <h4 class="uiux-design">UI/UX Design</h4>
+                    <h4 class="database-design">Database Design</h4>
+                    <h4 class="software-testing">Software Testing</h4>
+                </div>
+        
+                <div class="homepage-1-gambar-container">
+                    <img src="images/back-image-orange.png" alt="back image" id="back-image">
+                    <div class="dot-container">
+                        <div class="circle orange"></div>
+                        <div class="circle green"></div>
+                        <div class="circle red"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                    <img src="images/live-chat.png" alt="live chat logo" id="live-chat">
+                </div>
+            </div>
+
+
+            <!-- Green Homepage -->
+            <div class="homepage-1 carousel-item" data-interval="3">
+                <nav class="navbar">
+                    <div class="penutup-warna"></div>
+                    <div class="navbar-container">
+                        <img src="images/logo.png" id="navbar-logo" alt="logo navbar">
+
+                        <!-- List Navbarnya -->
+                        <ul class="navbar-menu">
+                            <div class="howitworks">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-links">How It Works</a>
+                                    <i class="fa-solid fa-angle-down green-arrow"></i>
+                                </li>
+                                <ul class="dropdown-howitworks green-dropdown" onclick="closeDropdown('discover'); closeDropdown('community')">
+                                    <li id="aboutuslink-1" class="first-howitworks">
+                                        <h5>About Us</h5>
+                                        <p>Introduction our website.</p>
+                                    </li>
+                                    <li id="ownerlink-1">
+                                        <h5>Learn</h5>
+                                        <p>How it works, advantages, rules.</p>
+                                    </li>
+                                    <li id="pricinglink-1">
+                                        <h5>Pricing</h5>
+                                        <p>Pricing Details and Options.</p>
+                                    </li>
+                                    <li id="faqslink-1">
+                                        <h5>Help</h5>
+                                        <p>Explore tips, testimonials, and FAQs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="discover" onclick="closeDropdown('howitworks'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Discover</a>
+                                    <i class="fa-solid fa-angle-down green-arrow"></i>
+                                </li>
+                                <ul class="dropdown-discover green-dropdown">
+                                    <li id="createlink-1" class="first-discover">
+                                        <h5>Create Project</h5>
+                                        <p>Create your project and find a worker</p>
+                                    </li>
+                                    <li id="browselink-1">
+                                        <h5>Browse Products and Projects</h5>
+                                        <p>Search for available Products</p>
+                                    </li>
+                                    <li id="selllink-1">
+                                        <h5>Sell Services and Products</h5>
+                                        <p>Sell your services and products</p>
+                                    </li>
+                                    <li id="affiliatelink-1">
+                                        <h5>Affiliate</h5>
+                                        <p>How to become affiliate from zero</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Community</a>
+                                    <i class="fa-solid fa-angle-down green-arrow"></i>
+                                </li>
+                                <ul class="dropdown-community green-dropdown">
+                                    <li id="communitylink-1" class="first-community">
+                                        <h5>Community</h5>
+                                        <p>Connect with Projects.co.id community</p>
+                                    </li>
+                                    <li id="bloglink-1">
+                                        <h5>Blog</h5>
+                                        <p>Online platform for sharing ideas and stories.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="navbar-item">
+                                <a href="/" class="navbar-link start-work green-startwork">Start Work</a>
+                            </li>
+                            <li class="navbar-btn">
+                                <a href="login/index.html" class="button green-join">Join</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="homepage-1-tulisan-container">
+                    <h2 class="temukan-freelancer green-temukan-freelancer">TEMUKAN FREELANCER</h2>
+                    <h4 class="dari-seluruh-indonesia">DARI SELURUH PENJURU INDONESIA UNTUK BERBAGAI PEKERJAAN</h4>
+                    <div class="search-bar-white"></div>
+                    <div class="search-bar-orange green-search-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="tulisan-search">Try "Web Development"</h5>
+                    <h4 class="popular">Popular:</h4>
+                    <h4 class="website-design">Website Design</h4>
+                    <h4 class="uiux-design">UI/UX Design</h4>
+                    <h4 class="database-design">Database Design</h4>
+                    <h4 class="software-testing">Software Testing</h4>
+                </div>
+        
+                <div class="homepage-1-gambar-container">
+                    <img src="images/back-image-green.png" alt="back image" id="back-image-green">
+                    <div class="dot-container">
+                        <div class="circle orange"></div>
+                        <div class="circle green"></div>
+                        <div class="circle red"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                    <img src="images/live-chat.png" alt="live chat logo" id="live-chat">
+                </div>
+            </div>
+
+
+            <!-- Red Homepage -->
+            <div class="homepage-1 carousel-item" data-interval="3">
+                <nav class="navbar">
+                    <div class="penutup-warna"></div>
+                    <div class="navbar-container">
+                        <img src="images/logo.png" id="navbar-logo" alt="logo navbar">
+
+                        <!-- List Navbarnya -->
+                        <ul class="navbar-menu">
+                            <div class="howitworks" onclick="closeDropdown('discover'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-links">How It Works</a>
+                                    <i class="fa-solid fa-angle-down red-arrow"></i>
+                                </li>
+                                <ul class="dropdown-howitworks red-dropdown">
+                                    <li id="aboutuslink-2-3" class="first-howitworks">
+                                        <h5>About Us</h5>
+                                        <p>Introduction our website.</p>
+                                    </li>
+                                    <li id="ownerlink-2">
+                                        <h5>Learn</h5>
+                                        <p>How it works, advantages, rules.</p>
+                                    </li>
+                                    <li id="pricinglink-2">
+                                        <h5>Pricing</h5>
+                                        <p>Pricing Details and Options.</p>
+                                    </li>
+                                    <li id="faqslink-2">
+                                        <h5>Help</h5>
+                                        <p>Explore tips, testimonials, and FAQs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="discover" onclick="closeDropdown('howitworks'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Discover</a>
+                                    <i class="fa-solid fa-angle-down red-arrow"></i>
+                                </li>
+                                <ul class="dropdown-discover red-dropdown">
+                                    <li id="createlink-2" class="first-discover">
+                                        <h5>Create Project</h5>
+                                        <p>Create your project and find a worker</p>
+                                    </li>
+                                    <li id="browselink-2">
+                                        <h5>Browse Products and Projects</h5>
+                                        <p>Search for available Products</p>
+                                    </li>
+                                    <li id="selllink-2">
+                                        <h5>Sell Services and Products</h5>
+                                        <p>Sell your services and products</p>
+                                    </li>
+                                    <li id="affiliatelink-2">
+                                        <h5>Affiliate</h5>
+                                        <p>How to become affiliate from zero</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Community</a>
+                                    <i class="fa-solid fa-angle-down red-arrow"></i>
+                                </li>
+                                <ul class="dropdown-community red-dropdown">
+                                    <li id="communitylink-2" class="first-community">
+                                        <h5>Community</h5>
+                                        <p>Connect with Projects.co.id community</p>
+                                    </li>
+                                    <li id="bloglink-2">
+                                        <h5>Blog</h5>
+                                        <p>Online platform for sharing ideas and stories.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="navbar-item">
+                                <a href="/" class="navbar-link start-work red-startwork">Start Work</a>
+                            </li>
+                            <li class="navbar-btn">
+                                <a href="login/index.html" class="button red-join">Join</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="homepage-1-tulisan-container">
+                    <h2 class="temukan-freelancer red-temukan-freelancer">TEMUKAN FREELANCER</h2>
+                    <h4 class="dari-seluruh-indonesia">DARI SELURUH PENJURU INDONESIA UNTUK BERBAGAI PEKERJAAN</h4>
+                    <div class="search-bar-white"></div>
+                    <div class="search-bar-orange red-search-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="tulisan-search">Try "Web Development"</h5>
+                    <h4 class="popular">Popular:</h4>
+                    <h4 class="website-design">Website Design</h4>
+                    <h4 class="uiux-design">UI/UX Design</h4>
+                    <h4 class="database-design">Database Design</h4>
+                    <h4 class="software-testing">Software Testing</h4>
+                </div>
+        
+                <div class="homepage-1-gambar-container">
+                    <img src="images/back-image-red.png" alt="back image" id="back-image-red">
+                    <div class="dot-container">
+                        <div class="circle orange"></div>
+                        <div class="circle green"></div>
+                        <div class="circle red"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                    <img src="images/live-chat.png" alt="live chat logo" id="live-chat">
+                </div>
+            </div>
+
+
+            <!-- Blue Homepage -->
+            <div class="homepage-1 carousel-item" data-interval="3">
+                <nav class="navbar">
+                    <div class="penutup-warna"></div>
+                    <div class="navbar-container">
+                        <img src="images/logo.png" id="navbar-logo" alt="logo navbar">
+
+                        <!-- List Navbarnya -->
+                        <ul class="navbar-menu">
+                            <div class="howitworks" onclick="closeDropdown('discover'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-links">How It Works</a>
+                                    <i class="fa-solid fa-angle-down blue-arrow"></i>
+                                </li>
+                                <ul class="dropdown-howitworks blue-dropdown">
+                                    <li id="aboutuslink-3" class="first-howitworks">
+                                        <h5>About Us</h5>
+                                        <p>Introduction our website.</p>
+                                    </li>
+                                    <li id="ownerlink-3">
+                                        <h5>Learn</h5>
+                                        <p>How it works, advantages, rules.</p>
+                                    </li>
+                                    <li id="pricinglink-3">
+                                        <h5>Pricing</h5>
+                                        <p>Pricing Details and Options.</p>
+                                    </li>
+                                    <li id="faqslink-3">
+                                        <h5>Help</h5>
+                                        <p>Explore tips, testimonials, and FAQs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="discover" onclick="closeDropdown('howitworks'); closeDropdown('community')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Discover</a>
+                                    <i class="fa-solid fa-angle-down blue-arrow"></i>
+                                </li>
+                                <ul class="dropdown-discover blue-dropdown">
+                                    <li id="createlink-3" class="first-discover">
+                                        <h5>Create Project</h5>
+                                        <p>Create your project and find a worker</p>
+                                    </li>
+                                    <li id="browselink-3">
+                                        <h5>Browse Products and Projects</h5>
+                                        <p>Search for available Products</p>
+                                    </li>
+                                    <li id="selllink-3">
+                                        <h5>Sell Services and Products</h5>
+                                        <p>Sell your services and products</p>
+                                    </li>
+                                    <li id="affiliatelink-3">
+                                        <h5>Affiliate</h5>
+                                        <p>How to become affiliate from zero</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
+                                <li class="navbar-item">
+                                    <a href="/" class="navbar-link">Community</a>
+                                    <i class="fa-solid fa-angle-down blue-arrow"></i>
+                                </li>
+                                <ul class="dropdown-community blue-dropdown">
+                                    <li id="communitylink-3" class="first-community">
+                                        <h5>Community</h5>
+                                        <p>Connect with Projects.co.id community</p>
+                                    </li>
+                                    <li id="bloglink-3">
+                                        <h5>Blog</h5>
+                                        <p>Online platform for sharing ideas and stories.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="navbar-item">
+                                <a href="/" class="navbar-link start-work blue-startwork">Start Work</a>
+                            </li>
+                            <li class="navbar-btn">
+                                <a href="login/" class="button blue-join">Join</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="homepage-1-tulisan-container">
+                    <h2 class="temukan-freelancer blue-temukan-freelancer">TEMUKAN FREELANCER</h2>
+                    <h4 class="dari-seluruh-indonesia">DARI SELURUH PENJURU INDONESIA UNTUK BERBAGAI PEKERJAAN</h4>
+                    <div class="search-bar-white"></div>
+                    <div class="search-bar-orange blue-search-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="tulisan-search">Try "Web Development"</h5>
+                    <h4 class="popular">Popular:</h4>
+                    <h4 class="website-design">Website Design</h4>
+                    <h4 class="uiux-design">UI/UX Design</h4>
+                    <h4 class="database-design">Database Design</h4>
+                    <h4 class="software-testing">Software Testing</h4>
+                </div>
+        
+                <div class="homepage-1-gambar-container">
+                    <img src="images/back-image-blue.png" alt="back image" id="back-image-blue">
+                    <div class="dot-container">
+                        <div class="circle orange"></div>
+                        <div class="circle green"></div>
+                        <div class="circle red"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                    <img src="images/live-chat.png" alt="live chat logo" id="live-chat">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pembatas-orange batas-carousel">
+        <img src="images/pembatas-orange.png" alt="pemabatas warna orange" id="pembatas-gambar">
+    </div>
+
+    <div class="popular-services-page">
+        <div class="background"></div>
+        <h2 class="popular-services">Popular Services</h2>
+        <div class="caroussel-container">
+            <div class="kotak-carousel">
+                <p class="text-carousel">Go Global</p>
+                <p class="text-carousel big">Translation</p>
+                <img src="images/caroussel-1.png" alt="Caroussel 1" id="caroussel-1" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Unlock Your Growth Online</p>
+                <p class="text-carousel big">SEO</p>
+                <img src="images/caroussel-2.png" alt="Caroussel 2" id="caroussel-2" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel white">Color Your Dream</p>
+                <p class="text-carousel big white">Illustration</p>
+                <img src="images/caroussel-3.png" alt="Caroussel 3" id="caroussel-3" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Capture Your Moments</p>
+                <p class="text-carousel big">Photography</p>
+                <img src="images/caroussel-4.png" alt="Caroussel 4" id="caroussel-4" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Add Talents to AI</p>
+                <p class="text-carousel big">AI Artist</p>
+                <img src="images/caroussel-5.png" alt="Caroussel 5" id="caroussel-5" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Go Global</p>
+                <p class="text-carousel big">Translation</p>
+                <img src="images/caroussel-1.png" alt="Caroussel 6" id="caroussel-6" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Unlock Your Growth Online</p>
+                <p class="text-carousel big">SEO</p>
+                <img src="images/caroussel-2.png" alt="Caroussel 7" id="caroussel-7" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel white">Color Your Dream</p>
+                <p class="text-carousel big white">Illustration</p>
+                <img src="images/caroussel-3.png" alt="Caroussel 8" id="caroussel-8" class="image-carousel">
+            </div>
+            <div class="kotak-carousel">
+                <p class="text-carousel">Capture Your Moments</p>
+                <p class="text-carousel big">Photography</p>
+                <img src="images/caroussel-4.png" alt="Caroussel 9" id="caroussel-9" class="image-carousel">
+            </div>
+        </div>
+
+        <!-- Left and Right Button -->
+        <div id = "left-button" class="left button-caroussel">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div id = "right-button" class="right button-caroussel">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+    <!-- Benefit Page -->
+    <div class="benefit-container">
+        <img src="images/benefit-background.png" alt="Background Benefit" id="benefit-background">
+        <img src="images/benefit-image-1.png" alt="Gambar Benefit yang di kiri" id="benefit-image-1">
+        <h2 class="whats-best">What's the best?Everything.</h2>
+        <i class="fa-regular fa-circle-check"></i>
+        <h4 class="benefit">Quality work done quickly</h4>
+        <p class="benefit-small">Your project will be handled by professional workers.</p>
+        <i class="fa-regular fa-circle-check"></i>
+        <h4 class="benefit">Stick to your budget</h4>
+        <p class="benefit-small">No hourly rates, just project-based pricing.</p>
+        <i class="fa-regular fa-circle-check"></i>
+        <h4 class="benefit">24/7 Support</h4>
+        <p class="benefit-small">We always be there for you.</p>
+        <i class="fa-regular fa-circle-check"></i>
+        <h4 class="benefit">Payment Secure</h4>
+        <p class="benefit-small">Payment will be settled after you approve.</p>
+    </div>
+
+    <div class="pembatas-orange">
+        <img src="images/pembatas-orange.png" alt="pemabatas warna orange" id="pembatas-gambar">
+    </div>
+
+    <div class="need-help">
+        <img src="images/benefit-background.png" alt="Background need help" id="need-help-background">
+        <img src="images/need-help-image.png" alt="Need Help Image" id="need-help-image">
+        <h3 class="need-help-tulisan">Need Help?</h3>
+        <p class="need-help-learnmore">Learn More</p>
+    </div>
+
+    <div class="pembatas-orange">
+        <img src="images/pembatas-orange.png" alt="pemabatas warna orange" id="pembatas-gambar">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container-categories">
+            <p class="categories-footer">Categories</p>
+            <p class="footer-normal-tulisan">Graphic & Design</p>
+            <p class="footer-normal-tulisan">Digital Marketing</p>
+            <p class="footer-normal-tulisan">Music & Audio</p>
+            <p class="footer-normal-tulisan">Writing & Translation</p>
+        </div>
+        <img src="images/logo-transparent.png" alt="Logo Footer" id="footer-logo">
+
+        <div class="container-community">
+            <p class="community-footer">Community</p>
+            <p class="footer-normal-tulisan">Community Hub</p>
+            <p class="footer-normal-tulisan">Blog</p>
+            <p class="footer-normal-tulisan">Affiliate</p>
+        </div>
+
+        <div class="container-contactus">
+            <p class="contactus-footer">Contact Us</p>
+            <p class="footer-normal-tulisan">About Us</p>
+            <p class="footer-normal-tulisan">Help</p>
+        </div>
+
+        <img src="images/playstore.png" alt="Play Store" id="playstore">
+        <img src="images/appstore.png" alt="App Store" id="appstore">
+
+        <div class="socmed-container">
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="link.js"></script>
+    <script src="link2.js"></script>
+    <script src="link3.js"></script>
+    <script src="link4.js"></script>
+</body>
+</html>
