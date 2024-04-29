@@ -176,19 +176,6 @@ button:hover {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.preloader {
-  visibility:collapse;
-  z-index: 10;
-  margin-left: 130px;
-  display: flex;
-  position: absolute;
-  height: 700px;
-}
-.open-preloader{
-  top: 10px;
-  visibility: visible;
-  /* transition:none ; */
-}
 .belakang{
   z-index: 0 ;
 }

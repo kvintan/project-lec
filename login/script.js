@@ -1,39 +1,49 @@
-// @type {HTMLFormElement}
-let form = document.getElementById("register-form")
-
-form.addEventListener("submit",function(e) {
-    e.preventDefault()
-    // console.log(form)
-
-    let name = document.getElementById("name")
-
-    
-    let email = document.getElementById("email")
-
-    
-    let password = document.getElementById("password")
-
-
-    alert("Submit!")
-
-})
-
-let preloader = document.getElementById("preloader");
-let behind = document.getElementById("behind");
-function popOpen(){
-    behind.style.filter = "blur(10px)";
-    preloader.classList.add("open-preloader");
-    // preloader.classList.toggle("open-preloader");
-}
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    var form = document.getElementById('button-sub');
-    form.addEventListener('click', function (event) {
-        event.preventDefault();
+    let form = document.getElementById("register-form");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let nameInput = document.getElementById("name");
+        let emailInput = document.getElementById("email");
+        let passwordInput = document.getElementById("password");
+
+        let name = nameInput.value.trim();
+        let email = emailInput.value.trim();
+        let password = passwordInput.value.trim();
+
+        if (name === "") {
+            alert("Please enter your name");
+            return;
+        }
+
+        if (email === "") {
+            alert("Email cannot be empty");
+            return;
+        }
+
+        if (!email.endsWith("@gmail.com")) {
+            alert("Email must end with @gmail.com");
+            return;
+        }
+
+        if (password === "") {
+            alert("Please enter your password");
+            return;
+        }
+
+        alert("Submit Successfully!");
 
         setTimeout(function () {
             window.location.href = '../index.html';
-        }, 3000);
+        });
+    });
+
+    let submitButton = document.getElementById('button-sub');
+    
+    submitButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        
+        form.dispatchEvent(new Event('submit'));
     });
 });
