@@ -76,11 +76,20 @@
                 </div>
 
                 <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
-                    <div class="community" onclick="closeDropdown('discover'); closeDropdown('howitworks')">
-                        <li class="navbar-item">
-                            <a href="/" class="navbar-link" id="communitylink">Community</a>
+                    <li class="navbar-item">
+                        <a href="/" class="navbar-link">Community</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <ul class="dropdown-community allpage">
+                        <li id="communitylink" class="first-community">
+                            <h5>Community</h5>
+                            <p>Connect with Projects.co.id community</p>
                         </li>
-                    </div>
+                        <li id="bloglink">
+                            <h5>Blog</h5>
+                            <p>Online platform for sharing ideas and stories.</p>
+                        </li>
+                    </ul>
                 </div>
 
                 <li class="navbar-item">
@@ -98,31 +107,20 @@
             <img src="images/background-community-blog.png" alt="Gambar Community Blog" id="community-blog-background">
             <h2 class="community-text">Community Blog</h2>
             <p class="welcome-community">Welcome to projects.co.id ‘s community blog</p>
-            <div class="search-bar-community">
+            <div class="search-bar-community" style="left: 50px">
                 <p class="web-development-community">Try "Web Development"</p>
                 <div class="kotak-orange-community"></div>
                 <img src="images/search-bar.png" id="search-bar-community" alt="Search Bar Community">
             </div>
         </div>
 
-        <div class="community-list">
-            <div class="general">
-                <h2 class="channels"> Channels</h2>
-                <ul>
-                    <li>All Channels</li>
-                    <li>General</li>
-                    <li>Outsourcing</li>
-                    <li>Freelancing</li>
-                    <li>Newcomer</li>
-                    <li>Advices</li>
-                </ul>
-            </div>
+        <div class="community-list blog">
             <div class="list-community">
-                <div class="container-thread">
+                <div class="container-thread blog">
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img src="images/orang-thread.png" id="orang-thread">
-                        <h2>Thread Title</h2>
+                        <h2>Blog Title</h2>
                         <h3>@owner</h3>
                         <ul>
                             <li>Channel</li>
@@ -132,51 +130,51 @@
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img src="images/orang-thread.png" id="orang-thread" style="top: 70px;">
-                        <h2 style="top: 120px;">Thread Title</h2>
+                        <h2 style="top: 120px;">Blog Title</h2>
                         <h3 style="top: 145px;">@owner</h3>
                         <ul>
-                            <li style="top: 120px;">Channel</li>
-                            <li style="top: 120px;">Date Uploaded</li>
+                            <li style="top: 120px; font-weight: bold;">Channel</li>
+                            <li style="top: 120px; font-weight: bold;">Date Uploaded</li>
                         </ul>
                     </div>
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img style="top: 190px;" src="images/orang-thread.png" id="orang-thread">
-                        <h2 style="top: 240px;">Thread Title</h2>
+                        <h2 style="top: 240px;">Blog Title</h2>
                         <h3 style="top: 265px;">@owner</h3>
                         <ul>
-                            <li style="top: 240px;">Channel</li>
-                            <li style="top: 240px;">Date Uploaded</li>
+                            <li style="top: 240px; font-weight: bold;">Channel</li>
+                            <li style="top: 240px; font-weight: bold;">Date Uploaded</li>
                         </ul>
                     </div>
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img style="top: 310px;" src="images/orang-thread.png" id="orang-thread">
-                        <h2 style="top: 360px;">Thread Title</h2>
+                        <h2 style="top: 360px;">Blog Title</h2>
                         <h3 style="top: 385px;">@owner</h3>
                         <ul>
-                            <li style="top: 360px;">Channel</li>
-                            <li style="top: 360px;">Date Uploaded</li>
+                            <li style="top: 360px; font-weight: bold;">Channel</li>
+                            <li style="top: 360px; font-weight: bold;">Date Uploaded</li>
                         </ul>
                     </div>
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img style="top: 430px;" src="images/orang-thread.png" id="orang-thread">
-                        <h2 style="top: 480px;">Thread Title</h2>
+                        <h2 style="top: 480px;">Blog Title</h2>
                         <h3 style="top: 505px;">@owner</h3>
                         <ul>
-                            <li style="top: 480px;">Channel</li>
-                            <li style="top: 480px;">Date Uploaded</li>
+                            <li style="top: 480px; font-weight: bold;">Channel</li>
+                            <li style="top: 480px; font-weight: bold;">Date Uploaded</li>
                         </ul>
                     </div>
                     <div class="thread-border">
                         <img src="images/thread-background.png" id="thread-background">
                         <img style="top: 550px;" src="images/orang-thread.png" id="orang-thread">
-                        <h2 style="top: 600px;">Thread Title</h2>
+                        <h2 style="top: 600px;">Blog Title</h2>
                         <h3 style="top: 625px;">@owner</h3>
                         <ul>
-                            <li style="top: 600px;">Channel</li>
-                            <li style="top: 600px;">Date Uploaded</li>
+                            <li style="top: 600px; font-weight: bold;">Channel</li>
+                            <li style="top: 600px; font-weight: bold;">Date Uploaded</li>
                         </ul>
                     </div>
                 </div>
@@ -187,7 +185,7 @@
     
 
         <!-- Footer -->
-        <div class="footer aboutus-footer pricingpage-footer">
+        <div class="footer aboutus-footer pricingpage-footer blog-footer">
             <div class="container-categories">
                 <p class="categories-footer">Categories</p>
                 <p class="footer-normal-tulisan">Graphic & Design</p>
