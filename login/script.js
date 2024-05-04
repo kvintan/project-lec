@@ -32,11 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        alert("Submit Successfully!");
-
-        setTimeout(function () {
-            window.location.href = '../index.html';
-        });
+        let confirmation = confirm("Are you sure you want to submit?");
+        if (confirmation) {
+            alert("Submit Successfully!");
+            setTimeout(function () {
+                window.location.href = '../index.html';
+            });
+        } else {
+        }
     });
 
     let submitButton = document.getElementById('button-sub');
